@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Apply | Mere Simplicity</title>
+  <meta name="description" content="Apply for the Mere Simplicity freelance tech partnership." />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <header class="navbar">
+    <a href="index.html" class="brand">
+      <div class="logo">MS</div>
+      <div>
+        <h3>Mere Simplicity</h3>
+        <p>Application Form</p>
+      </div>
+    </a>
+
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="#about-you">About You</a>
+      <a href="#form">Form</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="apply-hero fade-up">
+      <span class="tag">Applications close Friday, 26 June 2026</span>
+      <h1>Apply for the Partnership.</h1>
+      <p>
+        This form is for a freelance / partnership opportunity. Keep your answers
+        clear, honest, and professional.
+      </p>
+    </section>
+
+    <section class="about-section" id="about-you">
+      <div class="section-title fade-up">
+        <span class="small-title">About You</span>
+        <h2>The kind of person needed.</h2>
+        <p>
+          Skill matters, but reliability matters too. This partnership needs
+          someone who communicates, learns fast, solves problems, and can help
+          move technical work toward launch.
+        </p>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-card fade-up">
+          <h3>Reliable</h3>
+          <p>You communicate clearly, give updates, and do not disappear when things get difficult.</p>
+        </div>
+
+        <div class="about-card fade-up">
+          <h3>Technical</h3>
+          <p>You can contribute to development, deployment, backend setup, testing, or release preparation.</p>
+        </div>
+
+        <div class="about-card fade-up">
+          <h3>Resourceful</h3>
+          <p>You can read documentation, debug problems, research errors, and find solutions.</p>
+        </div>
+
+        <div class="about-card fade-up">
+          <h3>Available</h3>
+          <p>You have enough time and reliable data or Wi-Fi to actually contribute.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="form-section" id="form">
+
+      <form
+        id="partnerForm"
+        class="application-form fade-up"
+        action="https://formspree.io/f/xvznjlqk"
+        method="POST"
+      >
+
+        <input type="hidden" name="_subject" value="New Mere Simplicity Tech Partner Application" />
+        <input type="text" name="_gotcha" class="hidden" tabindex="-1" autocomplete="off" />
+
+        <div class="form-heading">
+          <span class="small-title">Application Form</span>
+          <h2>Partnership Intake</h2>
+          <p>Required fields are marked with *</p>
+        </div>
+
+        <div class="form-block">
+          <h3>Contact Details</h3>
+
+          <div class="grid">
+            <div class="field">
+              <label for="fullName">Full Name *</label>
+              <input id="fullName" type="text" name="Full Name" placeholder="Your full name" required />
+            </div>
+
+            <div class="field">
+              <label for="email">Email *</label>
+              <input id="email" type="email" name="Email" placeholder="you@example.com" required />
+            </div>
+          </div>
+
+          <div class="grid">
+            <div class="field">
+              <label for="phone">WhatsApp / Phone *</label>
+              <input id="phone" type="tel" name="Phone" placeholder="+27..." required />
+            </div>
+
+            <div class="field">
+              <label for="location">Location *</label>
+              <input id="location" type="text" name="Location" placeholder="Campus / town / city" required />
+            </div>
+          </div>
+        </div>
+
+        <div class="form-block">
+          <h3>About You</h3>
+
+          <div class="grid">
+            <div class="field">
+              <label for="studentStatus">Are you a student? *</label>
+              <select id="studentStatus" name="Student Status" required>
+                <option value="">Select one</option>
+                <option>Yes, I am currently a student</option>
+                <option>No, I am not a student</option>
+                <option>I recently graduated</option>
+                <option>I am self-taught</option>
+              </select>
+            </div>
+
+            <div class="field">
+              <label for="institution">Institution / Background</label>
+              <input id="institution" type="text" name="Institution or Background" placeholder="University / college / self-taught" />
+            </div>
+          </div>
+
+          <div class="grid">
+            <div class="field">
+              <label for="internet">Do you have reliable data/Wi-Fi? *</label>
+              <select id="internet" name="Reliable Data or Wi-Fi" required>
+                <option value="">Select one</option>
+                <option>Yes, reliable</option>
+                <option>Sometimes reliable</option>
+                <option>No, not reliable</option>
+              </select>
+            </div>
+
+            <div class="field">
+              <label for="workStyle">Work Preference *</label>
+              <select id="workStyle" name="Work Preference" required>
+                <option value="">Select one</option>
+                <option>Remote</option>
+                <option>Campus / in-person meetups</option>
+                <option>Hybrid</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="aboutText">Tell me about yourself *</label>
+            <textarea
+              id="aboutText"
+              name="About You"
+              rows="5"
+              placeholder="Your background, what you are learning, what you are good at, and how you work."
+              required
+            ></textarea>
+          </div>
+        </div>
+
+        <div class="form-block">
+          <h3>Technical Skills</h3>
+
+          <div class="field">
+            <label>Which skills do you have? *</label>
+
+            <div class="checkbox-grid">
+              <label><input type="checkbox" name="Skills" value="React Native / Expo" /> React Native / Expo</label>
+              <label><input type="checkbox" name="Skills" value="TypeScript" /> TypeScript</label>
+              <label><input type="checkbox" name="Skills" value="Firebase" /> Firebase</label>
+              <label><input type="checkbox" name="Skills" value="Backend Integration" /> Backend Integration</label>
+              <label><input type="checkbox" name="Skills" value="DevOps / Deployment" /> DevOps / Deployment</label>
+              <label><input type="checkbox" name="Skills" value="EAS Build" /> EAS Build</label>
+              <label><input type="checkbox" name="Skills" value="Apple App Store Submission" /> Apple App Store Submission</label>
+              <label><input type="checkbox" name="Skills" value="Google Play Store Submission" /> Google Play Store Submission</label>
+              <label><input type="checkbox" name="Skills" value="CI/CD" /> CI/CD</label>
+              <label><input type="checkbox" name="Skills" value="App Performance Optimization" /> App Performance Optimization</label>
+              <label><input type="checkbox" name="Skills" value="Git / GitHub" /> Git / GitHub</label>
+              <label><input type="checkbox" name="Skills" value="Testing / Debugging" /> Testing / Debugging</label>
+            </div>
+
+            <p class="hint">Select at least one.</p>
+          </div>
+
+          <div class="grid">
+            <div class="field">
+              <label for="experience">Experience Level *</label>
+              <select id="experience" name="Experience Level" required>
+                <option value="">Select one</option>
+                <option>Beginner but serious</option>
+                <option>Intermediate</option>
+                <option>Advanced</option>
+                <option>Production experience</option>
+              </select>
+            </div>
+
+            <div class="field">
+              <label for="availability">Weekly Availability *</label>
+              <select id="availability" name="Weekly Availability" required>
+                <option value="">Select one</option>
+                <option>1–3 hours</option>
+                <option>4–8 hours</option>
+                <option>9–15 hours</option>
+                <option>15+ hours</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="portfolio">GitHub / Portfolio Link</label>
+            <input id="portfolio" type="url" name="Portfolio Link" placeholder="https://github.com/..." />
+          </div>
+
+          <div class="field">
+            <label for="strongest">What can you help with most? *</label>
+            <textarea
+              id="strongest"
+              name="Strongest Contribution"
+              rows="5"
+              placeholder="Example: deployment, Firebase setup, App Store submission, React Native performance..."
+              required
+            ></textarea>
+          </div>
+
+          <div class="field">
+            <label for="problem">Tell me about one technical problem you solved</label>
+            <textarea
+              id="problem"
+              name="Technical Problem Solved"
+              rows="4"
+              placeholder="Short example of something you built, fixed, debugged, or deployed."
+            ></textarea>
+          </div>
+        </div>
+
+        <div class="form-block">
+          <h3>Partnership Fit</h3>
+
+          <div class="field">
+            <label for="why">Why are you interested in this partnership? *</label>
+            <textarea
+              id="why"
+              name="Reason For Applying"
+              rows="5"
+              placeholder="Be direct. Why do you want to be part of this?"
+              required
+            ></textarea>
+          </div>
+
+          <div class="field">
+            <label for="expectation">What would you expect from the partnership?</label>
+            <textarea
+              id="expectation"
+              name="Partnership Expectations"
+              rows="4"
+              placeholder="Example: experience, payment agreement, project exposure, long-term collaboration..."
+            ></textarea>
+          </div>
+        </div>
+
+        <label class="agreement">
+          <input type="checkbox" name="Agreement" value="Accepted" required />
+          <span>
+            I understand this is a freelance / partnership opportunity and not permanent employment.
+          </span>
+        </label>
+
+        <button type="submit" id="submitBtn">Submit Application</button>
+
+        <p id="message"></p>
+
+      </form>
+
+    </section>
+
+  </main>
+
+  <footer>
+    <p>© Mere Simplicity</p>
+    <p>Applications close Friday, 26 June 2026</p>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
